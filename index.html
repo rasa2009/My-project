@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar ">
+        <div class="container fluid">
+            <img src="./img/logo.svg" alt="Medical Clinic" title="Medical Clinic">
+            <button class="btn btn-outline-primary" id='logIn' type="submit">Вход</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="container container-filter">
+            <input class="input filter-search" id="find" placeholder="Поиск по врачу" type="search">
+                <form class="container-filter--select-all" id='submitSearch'>
+                    <div class="container-filter--select-input">
+                        <div class="container-filter--select">
+                            <label class="label">Статус визита:</label>
+                            <select class="select filter-select chooseStatus">
+                                <option selected value="Все">Все</option>
+                                <option value="Открыт">Открыт</option>
+                                <option value="Завершен">Завершен</option>
+                            </select>
+                        </div>
+                        <div class="container-filter--select">
+                            <label class="label">Срочность:</label>
+                            <select class="select filter-select chooseUrgency">
+                                <option selected value="Все">Все</option>
+                                <option value="Обычная">Обычная</option>
+                                <option value="Приоритетная">Приоритетная</option>
+                                <option value="Неотложная">Неотложная</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-primary" id='search'  type="submit">Поиск</button>
+                </form>                    
+        </div>
+    </div>
+
+    <h6 class="no_added">No items have been added</h6>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="./js/script.js" type="module"></script>
+
+</body>
+</html>
